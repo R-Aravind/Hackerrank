@@ -2,14 +2,7 @@
 #include <cstdio>
 using namespace std;
 
-
-int max_of_four(int a, int b, int c, int d)
-{
-    int temp1,temp2;
-    temp1 = (a>b)?a:b;
-    temp2 = (c>b)?c:d;
-    return (temp1>temp2?temp1:temp2);
-}
+int max_of_four(int a, int b, int c, int d);
 
 int main() {
     int a, b, c, d;
@@ -18,4 +11,13 @@ int main() {
     printf("%d", ans);
     
     return 0;
+}
+
+
+int max_of_four(int a, int b, int c, int d)
+{
+    int temp1,temp2;
+    temp1 = (a>b)?a:b;
+    temp2 = (c>b)?c:d;
+    return (temp1>temp2?temp1:temp2);
 }
